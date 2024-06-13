@@ -1,5 +1,3 @@
-title: oiio DS Project
-#logo: /assets/img/headshot_circle.png
-description: Working Portfolio DS 
-show_downloads: true
-theme: Architect
+title: Data science dummy project
+#description: text below image
+theme: jekyll-theme-minimal
