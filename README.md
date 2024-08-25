@@ -22,43 +22,43 @@ The initial step starts with  csv files ingestion into SQL Server
 Data Quality check included the following steps:
 1. Imported fields format adjusted:
    
-   ![Folder Upload](./assets/Imgaes/CSVFormatImport.png)
+   ![Folder Upload](./assets/01_DataPrep_Screens/CSVFormatImport.png)
 
 2. Unrecognised manufacturers excluded:
    
-   ![Folder Upload](./assets/Imgaes/UnrecMnfctr.png)
+   ![Folder Upload](./assets/01_DataPrep_Screens/UnrecMnfctr.png)
 
 3. Inconsistent product_size values were addressed by splitting size and measurement units into separate fields and then recombined for consistency:
 
-   ![Folder Upload](./assets/Imgaes/InconsistSize.png)
-   ![Folder Upload](./assets/Imgaes/RecombinedMetricSize.png)
+   ![Folder Upload](./assets/01_DataPrep_Screens/InconsistSize.png)
+   ![Folder Upload](./assets/01_DataPrep_Screens/RecombinedMetricSize.png)
 
 4. Manual entry errors, too small or too big bottle sizes excluded:
    
-   ![Folder Upload](./assets/Imgaes/DataHandling.png)
+   ![Folder Upload](./assets/01_DataPrep_Screens/DataHandling.png)
 
 5. Manufacturers ranked to identify those with the highest to lowest contributions to total plastic waste for further top 20 selection:
 
-   ![Folder Upload](./assets/Imgaes/Ranking.png)
+   ![Folder Upload](./assets/01_DataPrep_Screens/Ranking.png)
 
 
 ## Data Analysis
 
 After data preparation, an initial correlation analysis asessed relationships between key variables. It revealed very weak relationships between ProductSize as shown on Figure 7 and the other variables (e.g., correlation with manufacturer_name was -0.054, and with Year, it was 0.008) and therefore ProductSize has been excluded from subsequent modeling.
 
-![Folder Upload](./assets/Imgaes/Correl.png)
+![Folder Upload](./assets/02_DataAnalysis_Screens/Correl.png)
 
 
 The next step involved the selection of a linear regression model. Individual linear regression models were trained for each manufacturer using the temporal data to forecast waste trends over the next two years:
 
-![Folder Upload](./assets/Imgaes/RegImplementCode.png)
+![Folder Upload](./assets/02_DataAnalysis_Screens/RegImplementCode.png)
 
 The models provided predictions of gradual, consistent growth in plastic bottle waste for most manufacturers, with Coca-Cola unsurprisingly  showing the highest volume but Universal Industries ( known for its still water products) came with highest  projected increase as illustrated in Figures 9 to 11.
 These predictions, visualized across different manufacturers, highlighted the growing environmental impact of plastic bottle waste, underscoring the importance of sustainable interventions.
 
-![Folder Upload](./assets/Imgaes/Top20MnfcPredic.png)
-![Folder Upload](./assets/Imgaes/Top20MnfcPredicVis2.png)
-![Folder Upload](./assets/Imgaes/Top20MnfcPredicVis3.png)
+![Folder Upload](./assets/02_DataAnalysis_Screens/Top20MnfcPredic.png)
+![Folder Upload](./assets/02_DataAnalysis_Screens/Top20MnfcPredicVis2.png)
+![Folder Upload](./assets/02_DataAnalysis_Screens/Top20MnfcPredicVis3.png)
 
 ## Conclusion and Future Recommendations
 
