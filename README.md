@@ -5,13 +5,13 @@ The project aims to predict trends in plastic bottle litter from major manufactu
 Initial findings unsurprisingly indicate Coca-Cola with the highest projected increase in plastic bottle waste
 in the next two years w. Overall, the trends show consistent growth in plastic waste across all manufacturers, signalling an upward trajectory in plastic bottle littering unless serious interventions are implemented.
 
-### Project Background
+## Project Background
 This project emerged from a strong personal opposition to littering and single-use plastics, given their harmful impact on ecosystems, particularly from chemicals like Bisphenol (Verma et al., 2016). Plastics degrade slowly, according to Loakeimidis et al. (2016), “PETs seem to remain robust for approximately fifteen years” leading to the accumulation of plastic debris that damages wildlife and disrupts ecological balance.
 To address this issue, I used a publicly available dataset containing “regularly-collected data about single-use plastic bottle waste found in public spaces, identified to the level of individual commercial products” (Kaggle, 2024). Data collection occurred predominantly in Africa, with some contributions from Europe. The row data is available in CSV format, with one CSV file per month of data.
 The results are planned to be presented via social media to raise public awareness by demonstrating real-world trends in plastic pollution as consequences of littering.
 I believe that raising awareness can encourages more people to reconsider their choices before purchasing another bottle of Coca-Cola or Pepsi. 
 
-#### Methodology
+## Methodology
 The methodology for this project involved using a linear regression model to predict future plastic bottle waste trends based on historical data from major manufacturers. Linear regression was selected for its simplicity and effectiveness in capturing time-based trends, particularly given the dataset's moderate size (12 000 rows) and clear temporal structure.
 
 # URL image link
