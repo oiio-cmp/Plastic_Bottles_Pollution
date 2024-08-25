@@ -24,12 +24,14 @@ Additionally, any findings should be used to promote positive environmental chan
 The initial step starts with  csv files ingestion into SQL Server using SQL Server Integration Services (SSIS) into pre-existing table. The choice of SQL Server was determined by the familiarity and proficiency with the tool in applying data validation and cleanse techniques. 
 Given the potential risks to data quality from manual inputs in the raw data, a rigorous analysis was conducted, including the following steps:
 1. Imported fields format adjusted:
-   
+   ![Folder Upload](./assets/Imgaes/CSVFormatImport.png)
+
+2. Unrecognised manufacturers excluded:
 # URL image link
 ![Image URL](https://statisticsbyjim.com/wp-content/uploads/2020/07/TimeSeriesTrade.png)
 # URL links
 [URL link](https://donnemartin.com/#portfolio)
 
 # bring in picture from file upload
-![Folder Upload](./assets/Imgaes/CSVFormatImport.png)
+
 
