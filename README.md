@@ -11,6 +11,9 @@ To address this issue, I used a publicly available dataset containing “regular
 The results are planned to be presented via social media to raise public awareness by demonstrating real-world trends in plastic pollution as consequences of littering.
 I believe that raising awareness can encourages more people to reconsider their choices before purchasing another bottle of Coca-Cola or Pepsi. 
 
+#### Methodology
+The methodology for this project involved using a linear regression model to predict future plastic bottle waste trends based on historical data from major manufacturers. Linear regression was selected for its simplicity and effectiveness in capturing time-based trends, particularly given the dataset's moderate size (12 000 rows) and clear temporal structure.
+
 # URL image link
 ![Image URL](https://statisticsbyjim.com/wp-content/uploads/2020/07/TimeSeriesTrade.png)
 # URL links
