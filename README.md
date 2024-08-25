@@ -14,6 +14,17 @@ I believe that raising awareness can encourages more people to reconsider their 
 ## Methodology
 The methodology for this project involved using a linear regression model to predict future plastic bottle waste trends based on historical data from major manufacturers. Linear regression was selected for its simplicity and effectiveness in capturing time-based trends, particularly given the dataset's moderate size (12 000 rows) and clear temporal structure.
 
+## Data Security and Ethical Considerations
+This project handles data based on litter collected in public environments. While it does not involve personal information, care was taken to ensure accurate representation of manufacturers' contributions to environmental pollution. 
+Ethical considerations include avoiding misrepresentation or bias when reporting manufacturers' impact. Given that the data reflects human observations, it was rigorously cleaned and validated to reduce inaccuracies.
+ Transparency in the analysis was prioritized to ensure that the findings are used to support genuine environmental improvements rather than unfairly targeting specific manufacturers.
+Additionally, any findings should be used to promote positive environmental change, avoiding misuse for greenwashing or misrepresentation of sustainability efforts.
+
+## Data Collection and Preparation
+The initial step starts with  csv files ingestion into SQL Server using SQL Server Integration Services (SSIS) into pre-existing table. The choice of SQL Server was determined by the familiarity and proficiency with the tool in applying data validation and cleanse techniques. 
+Given the potential risks to data quality from manual inputs in the raw data, a rigorous analysis was conducted, including the following steps:
+1. Imported fields format adjusted:
+   
 # URL image link
 ![Image URL](https://statisticsbyjim.com/wp-content/uploads/2020/07/TimeSeriesTrade.png)
 # URL links
