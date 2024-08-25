@@ -44,12 +44,32 @@ Given the potential risks to data quality from manual inputs in the raw data, a 
 
    ![Folder Upload](./assets/Imgaes/Ranking.png)
 
-   
-# URL image link
-![Image URL](https://statisticsbyjim.com/wp-content/uploads/2020/07/TimeSeriesTrade.png)
-# URL links
-[URL link](https://donnemartin.com/#portfolio)
 
-# bring in picture from file upload
 
+## Data Analysis
+
+After data preparation, an initial correlation analysis was conducted to assess the relationships between key variables: manufacturer, bottle size and time period. It revealed very weak relationships between ProductSize as shown on Figure 7 and the other variables (e.g., correlation with manufacturer_name was -0.054, and with Year, it was 0.008). 
+These low correlation values indicated that ProductSize had minimal influence on the temporal and manufacturer-specific trends in bottle waste. As a result, it is concluded that ProductSize should not be a key predictor in the subsequent modeling.
+
+![Folder Upload](./assets/Imgaes/Correl.png)
+
+
+The next step involved the selection of a linear regression model, which is appropriate for this dataset given its moderate size and the presence of a clear time component. Linear regression allowed to model the relationship between time (in months) and the aggregated plastic bottle waste for each manufacturer.
+Then individual linear regression models were trained for each manufacturer using the temporal data to forecast waste trends over the next two years:
+
+![Folder Upload](./assets/Imgaes/RegImplementCode.png)
+
+The models provided predictions of gradual, consistent growth in plastic bottle waste for most manufacturers, with Coca-Cola unsurprisingly  showing the highest volume but Universal Industries ( known for its still water products) came with highest  projected increase as illustrated in Figures 9 to 11.
+These predictions, visualized across different manufacturers, highlighted the growing environmental impact of plastic bottle waste, underscoring the importance of sustainable interventions.
+
+![Folder Upload](./assets/Imgaes/Top20MnfcPredic.png)
+![Folder Upload](./assets/Imgaes/Top20MnfcPredicVis2.png)
+![Folder Upload](./assets/Imgaes/Top20MnfcPredicVis3.png)
+
+## Conclusion and Future Recommendations
+
+This project predicts plastic bottle waste growth by manufacturer based on litter found in the environment. A key limitation is the lack of information whether there were consistent data collection practices. 
+The linear regression model used assumes a steady growth rate, which may not account for sudden shifts in consumption or environmental efforts. Future iterations should consider using more robust time series models, such as ARIMA or Random Forest Regressor, to better capture complex trends and unexpected variations. 
+This project’s results serve as a foundation for future research, where more complex models and broader datasets could offer deeper insights. Ultimately, the work emphasizes the importance of accurate data collection and predictive analysis in shaping effective waste management and reduction strategies.
+The findings align with existing knowledge on the environmental impacts of plastic waste, reinforcing concerns about the steady rise in pollution and the urgent need for more sustainable practices.
 
