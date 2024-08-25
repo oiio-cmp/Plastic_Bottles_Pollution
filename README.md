@@ -27,7 +27,24 @@ Given the potential risks to data quality from manual inputs in the raw data, a 
    
    ![Folder Upload](./assets/Imgaes/CSVFormatImport.png)
 
-3. Unrecognised manufacturers excluded:
+2. Unrecognised manufacturers excluded:
+   
+  ![Folder Upload](./assets/Imgaes/UnrecMnfctr.png)
+
+3. Inconsistent product_size values were addressed by splitting size and measurement units into separate fields and then recombined for consistency:
+
+  ![Folder Upload](./assets/Imgaes/InconsistSize.png)
+  ![Folder Upload](./assets/Imgaes/RecombinedMetricSize.png)
+
+4. Manual entry errors, too small or too big bottle sizes excluded:
+   
+   ![Folder Upload](./assets/Imgaes/DataHandling.png)
+
+5. Manufacturers ranked to identify those with the highest to lowest contributions to total plastic waste for further top 20 selection:
+
+   ![Folder Upload](./assets/Imgaes/Ranking.png)
+
+   
 # URL image link
 ![Image URL](https://statisticsbyjim.com/wp-content/uploads/2020/07/TimeSeriesTrade.png)
 # URL links
