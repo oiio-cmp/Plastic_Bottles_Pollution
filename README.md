@@ -31,5 +31,5 @@ Given the potential risks to data quality from manual inputs in the raw data, a 
 [URL link](https://donnemartin.com/#portfolio)
 
 # bring in picture from file upload
-![Folder Upload](.assets/Imgaes/CSVFormatImport.png)
+![Folder Upload](./assets/Imgaes/CSVFormatImport.png)
 
