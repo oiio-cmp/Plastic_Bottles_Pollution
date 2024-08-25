@@ -29,12 +29,12 @@ Given the potential risks to data quality from manual inputs in the raw data, a 
 
 2. Unrecognised manufacturers excluded:
    
-  ![Folder Upload](./assets/Imgaes/UnrecMnfctr.png)
+   ![Folder Upload](./assets/Imgaes/UnrecMnfctr.png)
 
 3. Inconsistent product_size values were addressed by splitting size and measurement units into separate fields and then recombined for consistency:
 
-  ![Folder Upload](./assets/Imgaes/InconsistSize.png)
-  ![Folder Upload](./assets/Imgaes/RecombinedMetricSize.png)
+   ![Folder Upload](./assets/Imgaes/InconsistSize.png)
+   ![Folder Upload](./assets/Imgaes/RecombinedMetricSize.png)
 
 4. Manual entry errors, too small or too big bottle sizes excluded:
    
